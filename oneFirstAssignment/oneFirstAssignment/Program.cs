@@ -10,7 +10,7 @@ namespace oneFirstAssignment
     {
         static void Main()
         {
-            Console.WriteLine("hi");
+            Console.WriteLine();
         }
     }
 }
