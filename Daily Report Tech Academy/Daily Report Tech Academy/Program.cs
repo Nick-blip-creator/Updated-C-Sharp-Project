@@ -22,8 +22,9 @@ namespace Daily_Report_Tech_Academy
             string specifics = Console.ReadLine();
             Console.WriteLine("How many hours did you study today?");
             string studyHours = Console.ReadLine();
+            int studyHrs = Convert.ToInt32(studyHours);
             Console.WriteLine("Thank you for your answers. An instructor will respond to this shortly. Have a great day!");
-
+            Console.ReadLine();
         }
     }
 }
