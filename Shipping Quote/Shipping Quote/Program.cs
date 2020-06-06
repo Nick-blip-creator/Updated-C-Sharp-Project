@@ -20,9 +20,9 @@ namespace Shipping_Quote
             Console.WriteLine("Please enter the package length");
             int packageLength = Convert.ToInt32(Console.ReadLine());
 
-            int dimension = packageHeight * packageLength;
+            int dimension = packageHeight * packageLength * packageWidth;
 
-            if (dimension > 50)
+            if (packageWeight > 50)
             {
                 Console.WriteLine("Package too big to be shipped via Package Express");
             }
