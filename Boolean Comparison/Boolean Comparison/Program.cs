@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -35,10 +36,19 @@ namespace Boolean_Comparison
             }
 
             while (!myAge);
-            Console.Read();
+            int thisNumber = 100;
+            while (thisNumber < 100)
+            {
+                Console.WriteLine(thisNumber);
+                thisNumber++;
+                Console.Read();
+
+            }
         }
     }
 }
+
+
             
                 
             
