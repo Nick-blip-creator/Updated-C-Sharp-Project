@@ -90,26 +90,28 @@ namespace Iterations
             }
             Console.WriteLine("S duplicate countries. ");
             List<string> countries = new List<string>() { "Germany", "Germany", "Sweden", "Switzerland", "America" };
+            List<string> newCountriesList = new List<string>();
+
 
             Console.WriteLine("Initial list of countries ...");
-            
+
             foreach (string val1 in countries)
             {
-                foreach (string val2 in countries)
+                if (val1.Contains(val1))
                 {
-                    if (val1 == val2)
-                    {
-                        Console.WriteLine(val1 + " is a duplicate");
-                        break;
-                       
-                    }
-                
+                   newCountriesList.Add(val1)
                 }
-                Console.Read();
+                Console.WriteLine(newCountriesList.Contains(val1));
 
             }
+
         }
+        Console.Read();
+
+
     }
+}
+    
 }
 
 
