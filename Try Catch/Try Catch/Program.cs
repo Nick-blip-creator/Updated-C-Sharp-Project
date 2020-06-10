@@ -16,12 +16,12 @@ namespace ConsoleApp3
 
             try
             {
-                List<int> myValues = new List<int>(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
+                List<int> myValues = new List<int>(new int[] { 50, 60, 70, 40, 90, 30, 70, 80, 90, 100 });
                 Console.WriteLine("Pick a number ");
                 int inputNumber = Convert.ToInt32(Console.ReadLine());
                 foreach (int value in myValues)
                 {
-                    int divided = inputNumber / value;
+                    int divided = value / inputNumber;
                     Console.WriteLine(divided);
                 }
             }
