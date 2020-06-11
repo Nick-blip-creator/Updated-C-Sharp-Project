@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CD79BACC-3DF9-490B-9B85-728E05007E1E}</ProjectGuid>
+    <ProjectGuid>{6E466E59-3DF7-4990-A2F5-65F9B6BE2AEB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TwentyTwentyOne</RootNamespace>
-    <AssemblyName>TwentyTwentyOne</AssemblyName>
+    <RootNamespace>Methods_Three</RootNamespace>
+    <AssemblyName>Methods Three</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Card.cs" />
-    <Compile Include="Deck.cs" />
+    <Compile Include="division.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
