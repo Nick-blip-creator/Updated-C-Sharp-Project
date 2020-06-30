@@ -16,8 +16,21 @@ namespace Step165
             Console.WriteLine("Please input two numbers");
             int inputOne = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("The second number is optional");
-            int inputTwo = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(class1Object.addition(inputOne, inputTwo));
+            string inputTwo = Console.ReadLine();
+
+            if (string.IsNullOrEmpty(inputTwo))
+            {
+                Console.WriteLine(class1Object.addition(inputOne));
+
+            }
+            else
+            {
+                int inputTwoNumber = Int32.Parse(inputTwo);
+                Console.WriteLine(class1Object.addition(inputOne, inputTwoNumber));
+
+            }
+
+
 
 
 

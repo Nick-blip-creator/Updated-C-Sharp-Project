@@ -9,7 +9,7 @@ namespace Step165
 {
     class Class1
     {
-        public int addition(int add1, [Optional] int add2)
+        public int addition(int add1,  int add2 = 0)
         {
             int total = add1 + add2;
             return total;
