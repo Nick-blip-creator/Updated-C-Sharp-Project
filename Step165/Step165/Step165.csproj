@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{61FD3F45-B6EA-475F-95E5-36C2D2F078C7}</ProjectGuid>
+    <ProjectGuid>{76DEAC5C-9DBE-49A9-985E-6D5DFAB8314A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Step164</RootNamespace>
-    <AssemblyName>Step164</AssemblyName>
+    <RootNamespace>Step165</RootNamespace>
+    <AssemblyName>Step165</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\..\Desktop\Step164.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
