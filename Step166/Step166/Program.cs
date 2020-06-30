@@ -10,6 +10,10 @@ namespace Step166
     {
         static void Main(string[] args)
         {
+            Class1 class1Object = new Class1();
+            class1Object.intOutput(10, 30);
+            Console.Read();
+
         }
     }
 }
