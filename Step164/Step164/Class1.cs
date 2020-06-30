@@ -13,15 +13,17 @@ namespace Step164
             int total = add + 10;
             return total;
             }
-        public double addition(double add)
+        public int addition(decimal add)
         {
-            double fullTotal = add + 10.9;
-            return fullTotal;
+            decimal fullTotal = add + 10.9m;
+            int result = Convert.ToInt32(fullTotal);
+            return result;
         }
-        public string addition(string add)
+        public int addition(string add)
         {
-            string spellNumber = add + "Hello";
-            return spellNumber;
+            int x = Convert.ToInt32(add);
+            x = x + 5;
+            return x;
         }
     }
 }
