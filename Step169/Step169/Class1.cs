@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Step166
+namespace Step169
 {
     class Class1
     {
-        public void intOutput(int num1, int num2)
+        public void intOutput(int userInput)
         {
-            int total = num1 + 500;
-            Console.WriteLine(num2);
+            int total = userInput / 2;
+            Console.WriteLine(total);
         }
-
     }
 }

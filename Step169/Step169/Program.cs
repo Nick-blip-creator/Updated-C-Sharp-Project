@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Step166
+namespace Step169
 {
     class Program
     {
         static void Main(string[] args)
         {
             Class1 class1Object = new Class1();
-            class1Object.intOutput(10, 10);
+            Console.WriteLine("Choose a number");
+            int input = Convert.ToInt32(Console.ReadLine());
+            class1Object.intOutput(input);
             Console.Read();
-
         }
     }
 }
