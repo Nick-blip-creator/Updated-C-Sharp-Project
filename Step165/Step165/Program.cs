@@ -12,7 +12,15 @@ namespace Step165
         {
             Class1 class1Object = new Class1();
             Console.WriteLine(class1Object.addition(5));
-            Console.WriteLine(class1Object.addition(5, 38));
+
+            Console.WriteLine("Please input two numbers");
+            int inputOne = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The second number is optional");
+            int inputTwo = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(class1Object.addition(inputOne, inputTwo));
+
+
+
             Console.Read();
 
 
