@@ -13,5 +13,10 @@ namespace Step169
             int total = userInput / 2;
             Console.WriteLine(total);
         }
+        public void voidMethod(int userInt, out int outInt)
+        {
+            outInt = userInt / 2;
+        }
+
     }
 }
