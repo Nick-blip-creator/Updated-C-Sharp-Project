@@ -20,9 +20,10 @@ namespace Step169
 
 
             
-            VoidMethod myVoidMethod = new VoidMethod();
-            myVoidMethod.VoidMethod(userInt, out int outInt);
-            Console.WriteLine(userInt + "Divide by 2 equals" + outInt + ".");
+            Class1 myVoidMethod = new Class1();
+            int userInt = Convert.ToInt32(Console.ReadLine());
+            myVoidMethod.voidMethod(userInt, out int outInt);
+            Console.WriteLine(userInt + "Divide by 2 equals " + outInt + ".");
 
 
             Console.Read();

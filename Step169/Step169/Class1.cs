@@ -17,6 +17,5 @@ namespace Step169
         {
             outInt = userInt / 2;
         }
-
     }
 }
