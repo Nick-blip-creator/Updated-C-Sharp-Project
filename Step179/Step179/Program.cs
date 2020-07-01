@@ -10,10 +10,8 @@ namespace Step179
     {
         static void Main(string[] args)
         {
-            Employee employed = new Employee();
-            employed.FirstName = "Sample ";
-            employed.LastName = "Student";
-            employed.sayName();
+            IQuittable employed = new Employee() {FirstName ="Sample", LastName="Student"};
+            employed.Quit();
             Console.ReadLine();
         }
     }
