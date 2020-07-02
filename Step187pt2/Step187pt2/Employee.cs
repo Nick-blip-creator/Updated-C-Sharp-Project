@@ -26,5 +26,9 @@ namespace Step187pt2
         {
             return !(employee1 == employee2);
         }
+        public void getID()
+        {
+            Console.WriteLine(ID);
+        }
     }
 }
