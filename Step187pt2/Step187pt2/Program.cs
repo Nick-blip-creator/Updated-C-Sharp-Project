@@ -15,10 +15,11 @@ namespace Step187pt2
             Employee employed = new Employee();
 
 
-            employed1.ID = 2342;
-            employed2.ID = 3234;
-            employed.getID();
+            Console.WriteLine(employed1 == employed2);
+            Console.WriteLine(employed1 != employed2);
             Console.Read();
+
         }
+        
     }
 }

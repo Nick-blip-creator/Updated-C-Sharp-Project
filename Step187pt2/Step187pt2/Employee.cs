@@ -12,23 +12,13 @@ namespace Step187pt2
 
         public static bool operator ==(Employee employee1, Employee employee2)
         {
-            if (ReferenceEquals(employee1, employee2))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return (employee1.ID == employee2.ID);
 
         }
         public static bool operator !=(Employee employee1, Employee employee2)
         {
-            return !(employee1 == employee2);
+            return (employee1.ID != employee2.ID);
         }
-        public void getID()
-        {
-            Console.WriteLine(ID);
-        }
+        
     }
 }
