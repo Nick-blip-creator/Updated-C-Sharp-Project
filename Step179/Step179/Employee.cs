@@ -10,11 +10,12 @@ namespace Step179
     {
         public override void sayName()
         {
-            Console.WriteLine( FirstName + LastName);
+            Console.WriteLine(FirstName + LastName);
         }
         public void Quit()
         {
             Console.WriteLine("Employee Quits");
         }
+        
     }
 }

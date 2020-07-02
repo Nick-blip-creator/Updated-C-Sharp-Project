@@ -11,7 +11,10 @@ namespace Step179
         static void Main(string[] args)
         {
             IQuittable employed = new Employee() {FirstName ="Sample", LastName="Student"};
+            Employee personell = new Employee();
             employed.Quit();
+         
+            
             Console.ReadLine();
         }
     }
