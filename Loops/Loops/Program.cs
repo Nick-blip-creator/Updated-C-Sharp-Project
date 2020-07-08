@@ -49,6 +49,7 @@ namespace Loops
                         Console.WriteLine("Sorry, Apples is not the right answer.");
                         Console.WriteLine("What is your favorite fruit?");
                         fruity = Console.ReadLine();
+
                         break;
                     case "Bananas":
                         Console.WriteLine("That is not correct.");
