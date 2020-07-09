@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace CarInsurance.Controllers
+namespace CInsurance.Controllers
 {
     public class HomeController : Controller
     {
@@ -26,7 +26,5 @@ namespace CarInsurance.Controllers
 
             return View();
         }
-
-        
     }
 }

@@ -6,9 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using CarInsurance.Models;
+using CInsurance.Models;
 
-namespace CarInsurance.Controllers
+namespace CInsurance.Controllers
 {
     public class InsureeController : Controller
     {
@@ -17,13 +17,6 @@ namespace CarInsurance.Controllers
         // GET: Insuree
         public ActionResult Index()
         {
-            return View(db.Insurees.ToList());
-        }
-
-        public ActionResult Admin()
-        {
-            ViewBag.Message = "This is the page about Admin";
-
             return View(db.Insurees.ToList());
         }
 
@@ -45,7 +38,6 @@ namespace CarInsurance.Controllers
         // GET: Insuree/Create
         public ActionResult Create()
         {
-            
             return View();
         }
 
@@ -54,52 +46,8 @@ namespace CarInsurance.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
+        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
         {
-            insuree.Quote = 50;
-            TimeSpan age = DateTime.Now - insuree.DateOfBirth;
-            int years = Convert.ToInt32(age.TotalDays / 365);
-
-            if (years <= 18)
-            {
-                insuree.Quote += 100;
-            }
-            else if (years <= 19 && years <= 25)
-            {
-                insuree.Quote += 50;
-            }
-            else if (years >= 25)
-            {
-                insuree.Quote += 25;
-            }
-            if (insuree.CarYear <= 2000)
-            {
-                insuree.Quote += 25;
-            }
-            else if (insuree.CarYear >= 2015)
-            {
-                insuree.Quote += 25;
-            }
-            if (insuree.CarMake == "Porsche".ToLower())
-            {
-                insuree.Quote += 25;
-            }
-            else if (insuree.CarMake == "Porsche".ToLower() && insuree.CarModel == "911 Carrera".ToLower())
-            {
-                insuree.Quote += 50;
-            }
-            insuree.Quote += insuree.SpeedingTickets * 10;
-            if (insuree.DUI)
-            {
-                insuree.Quote = insuree.Quote + (insuree.Quote * 0.25m);
-            }
-
-            if (insuree.CoverageType == true)
-
-            {
-                insuree.Quote += insuree.Quote + (insuree.Quote * 0.5m);
-            }
-            
             if (ModelState.IsValid)
             {
                 db.Insurees.Add(insuree);
@@ -130,7 +78,7 @@ namespace CarInsurance.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
+        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
         {
             if (ModelState.IsValid)
             {
@@ -175,7 +123,5 @@ namespace CarInsurance.Controllers
             }
             base.Dispose(disposing);
         }
-
-        
     }
 }

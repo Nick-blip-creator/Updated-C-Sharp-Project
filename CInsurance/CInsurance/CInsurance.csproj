@@ -8,17 +8,17 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D47DBE2C-79A2-465B-A95E-D0ECFF6D0BE7}</ProjectGuid>
+    <ProjectGuid>{49243353-331D-4E3D-B83B-0B19DD6B3573}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CarInsurance</RootNamespace>
-    <AssemblyName>CarInsurance</AssemblyName>
+    <RootNamespace>CInsurance</RootNamespace>
+    <AssemblyName>CInsurance</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44346</IISExpressSSLPort>
+    <IISExpressSSLPort>44357</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -215,7 +215,6 @@
     <Content Include="Views\Insuree\Details.cshtml" />
     <Content Include="Views\Insuree\Edit.cshtml" />
     <Content Include="Views\Insuree\Index.cshtml" />
-    <Content Include="Views\Insuree\Admin.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -250,9 +249,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>62392</DevelopmentServerPort>
+          <DevelopmentServerPort>49475</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44346/</IISUrl>
+          <IISUrl>https://localhost:44357/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
