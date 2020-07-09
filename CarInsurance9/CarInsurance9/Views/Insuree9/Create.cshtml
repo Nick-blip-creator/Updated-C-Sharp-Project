@@ -1,4 +1,4 @@
-﻿@model CarInsurance.Models.Insuree
+﻿@model CarInsurance9.Models.Insurees9
 
 @{
     ViewBag.Title = "Create";
@@ -12,7 +12,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Insuree</h4>
+        <h4>Insurees9</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -90,6 +90,7 @@
         </div>
 
         <div class="form-group">
+            <p>Click input box if you want to select Full Coverage. Leave blank if you want to have only Liability</p>
             @Html.LabelFor(model => model.CoverageType, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 <div class="checkbox">

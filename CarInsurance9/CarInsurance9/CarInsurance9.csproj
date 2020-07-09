@@ -8,17 +8,17 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D47DBE2C-79A2-465B-A95E-D0ECFF6D0BE7}</ProjectGuid>
+    <ProjectGuid>{DA7A6952-0A37-4BD9-9291-3A53F0EB52EA}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CarInsurance</RootNamespace>
-    <AssemblyName>CarInsurance</AssemblyName>
+    <RootNamespace>CarInsurance9</RootNamespace>
+    <AssemblyName>CarInsurance9</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44346</IISExpressSSLPort>
+    <IISExpressSSLPort>44321</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -129,53 +129,34 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\InsureeController.cs" />
+    <Compile Include="Controllers\Insuree9Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\InsuranceEntities.Context.cs">
+    <Compile Include="Models\InsuranceEntities9.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>InsuranceEntities.Context.tt</DependentUpon>
+      <DependentUpon>InsuranceEntities9.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\InsuranceEntities.cs">
+    <Compile Include="Models\InsuranceEntities9.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>InsuranceEntities.tt</DependentUpon>
+      <DependentUpon>InsuranceEntities9.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\InsuranceEntities.Designer.cs">
+    <Compile Include="Models\InsuranceEntities9.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>InsuranceEntities.edmx</DependentUpon>
+      <DependentUpon>InsuranceEntities9.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Insuree.cs">
-      <DependentUpon>InsuranceEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\InsureeEntities.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>InsureeEntities.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\InsureeEntities.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>InsureeEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\InsureeEntities.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>InsureeEntities.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Insurees1.cs">
-      <DependentUpon>InsureeEntities.tt</DependentUpon>
+    <Compile Include="Models\Insurees9.cs">
+      <DependentUpon>InsuranceEntities9.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Insurance.mdf" />
-    <Content Include="App_Data\Insurance_log.ldf">
-      <DependentUpon>Insurance.mdf</DependentUpon>
+    <Content Include="App_Data\Insurance9.mdf" />
+    <Content Include="App_Data\Insurance9_log.ldf">
+      <DependentUpon>Insurance9.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -185,41 +166,24 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\InsuranceEntities.Context.tt">
+    <Content Include="Models\InsuranceEntities9.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>InsuranceEntities.Context.cs</LastGenOutput>
-      <DependentUpon>InsuranceEntities.edmx</DependentUpon>
+      <LastGenOutput>InsuranceEntities9.Context.cs</LastGenOutput>
+      <DependentUpon>InsuranceEntities9.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\InsuranceEntities.tt">
+    <Content Include="Models\InsuranceEntities9.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>InsuranceEntities.edmx</DependentUpon>
-      <LastGenOutput>InsuranceEntities.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\InsureeEntities.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>InsureeEntities.edmx</DependentUpon>
-      <LastGenOutput>InsureeEntities.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\InsureeEntities.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>InsureeEntities.edmx</DependentUpon>
-      <LastGenOutput>InsureeEntities.cs</LastGenOutput>
+      <DependentUpon>InsuranceEntities9.edmx</DependentUpon>
+      <LastGenOutput>InsuranceEntities9.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\InsuranceEntities.edmx">
+    <EntityDeploy Include="Models\InsuranceEntities9.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>InsuranceEntities.Designer.cs</LastGenOutput>
+      <LastGenOutput>InsuranceEntities9.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\InsuranceEntities.edmx.diagram">
-      <DependentUpon>InsuranceEntities.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Models\InsureeEntities.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>InsureeEntities.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\InsureeEntities.edmx.diagram">
-      <DependentUpon>InsureeEntities.edmx</DependentUpon>
+    <Content Include="Models\InsuranceEntities9.edmx.diagram">
+      <DependentUpon>InsuranceEntities9.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -246,17 +210,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Insuree\Create.cshtml" />
-    <Content Include="Views\Insuree\Delete.cshtml" />
-    <Content Include="Views\Insuree\Details.cshtml" />
-    <Content Include="Views\Insuree\Edit.cshtml" />
-    <Content Include="Views\Insuree\Index.cshtml" />
-    <Content Include="Views\Insuree\Admin.cshtml" />
-    <Content Include="Views\InsPeople\Create.cshtml" />
-    <Content Include="Views\InsPeople\Delete.cshtml" />
-    <Content Include="Views\InsPeople\Details.cshtml" />
-    <Content Include="Views\InsPeople\Edit.cshtml" />
-    <Content Include="Views\InsPeople\Index.cshtml" />
+    <Content Include="Views\Insuree9\Create.cshtml" />
+    <Content Include="Views\Insuree9\Delete.cshtml" />
+    <Content Include="Views\Insuree9\Details.cshtml" />
+    <Content Include="Views\Insuree9\Edit.cshtml" />
+    <Content Include="Views\Insuree9\Index.cshtml" />
+    <Content Include="Views\Insuree9\Admin.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -291,9 +250,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>62392</DevelopmentServerPort>
+          <DevelopmentServerPort>51126</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44346/</IISUrl>
+          <IISUrl>https://localhost:44321/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
