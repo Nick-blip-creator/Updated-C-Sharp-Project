@@ -88,6 +88,8 @@ namespace Iterations
             {
                 Console.WriteLine("City not found.");
             }
+
+            //Part Pt. 11
             Console.WriteLine("S duplicate countries. ");
             List<string> countries = new List<string>() { "Germany", "Germany", "Sweden", "Switzerland", "America" };
             List<string> newCountriesList = new List<string>();
@@ -97,22 +99,25 @@ namespace Iterations
 
             foreach (string val1 in countries)
             {
-                if (val1.Contains(val1))
+                if (!newCountriesList.Contains(val1))
                 {
-                   newCountriesList.Add(val1)
+                    newCountriesList.Add(val1);
                 }
-                Console.WriteLine(newCountriesList.Contains(val1));
+                else
+                {
+                    Console.WriteLine(val1 + "Already exists");
+                }
 
             }
+            Console.Read();
 
         }
-        Console.Read();
 
 
     }
 }
     
-}
+
 
 
 
